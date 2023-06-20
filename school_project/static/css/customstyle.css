@@ -1,0 +1,118 @@
+/** Login page **/
+body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right,#b1ff14,#ff14f7);
+    }
+
+.container {
+      max-width: 400px;
+      margin-top: 100px;
+      padding: 20px;
+      border: 1px;
+      background-color: transparent;
+      border-radius: 5px;
+
+
+    }
+
+.container h2 {
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .container label,
+    .container input[type="text"],
+    .container input[type="password"],
+    .container button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+.container label {
+      font-weight: bold;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+.container button {
+      padding: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 3px;
+      width:40%;
+    }
+
+.container button:hover {
+      background-color: #45a049;
+  }
+
+/** Register page **/
+.content{
+      max-width: 400px;
+      margin-top: 100px;
+      padding: 20px;
+      border: 1px;
+      background-color: transparent;
+      border-radius: 5px;
+ }
+
+.b1{
+    text-align: center;
+    padding:30px 350px ;
+    border-radius: rounded-pill;}
+
+.log{
+    padding:15px;}
+.email{
+    height:50px;
+    width: 360px;}
+
+.input_box{
+ width:650px;}
+
+/** create_student page **/
+.card1{
+    width:500px;
+    background:blue;}
+.card-body{
+    padding-left:20px;}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width:500px;}
+
+#form{
+ width:700px;}
+
+.submit{
+ display: flex;
+ height: 50px;
+ width: 150px;
+ text-align: center;
+ margin: 20px 30px 20px 70px;}
+
+
+ #submit{
+ display: flex;
+ height: 50px;
+ width: 150px;
+ text-align: center;
+ margin: 20px 20px 20px 70px;}
+
+ .home{
+ display: flex;
+ height: 50px;
+ width: 150px;
+ text-align: center;
+ margin: 20px 30px 20px 70px;}

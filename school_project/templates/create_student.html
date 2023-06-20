@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Student</title>
+     <link rel="stylesheet" href="{% static 'css/customstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+   <div class="container" id="form">
+    <div class="shadow card card1">
+      <h1 style="text-align:center; padding: 10px;">FILL YOUR FORM</h1>
+      <form method="POST" action="{% url 'create_student' %}">
+      {% csrf_token %}
+        <div class="card-body">
+            <div class="form-group">
+              <label>Name:</label>
+              {{ form.name }}
+            </div>
+            <div class="form-group">
+              <label>DOB: Year-Month-Day</label>
+               {{ form.dob }}
+            </div>
+          <div class="form-group">
+            <label >Age:</label>
+            {{ form.age }}
+          </div>
+          <div class="form-group">
+            <label >Gender:</label>
+            {{form.gender}}
+          </div>
+          <div class="form-group">
+            <label >Phone Number:</label>
+            {{form.phone_number}}
+          </div>
+          <div class="form-group">
+            <label>Email:</label>
+            {{form.email}}
+          </div>
+          <div class="form-group">
+            <label >Address:</label>
+            {{form.address}}
+          </div>
+          <div class="form-group">
+            <label >Department:</label>
+            {{form.department}}
+          </div>
+          <div class="form-group">
+            <label >course:</label>
+            {{form.course}}
+          </div>
+             <div class="form-group">
+            <label >purpose:</label>
+            {{form.purpose}}
+          </div>
+          <div class="form-group">
+            <label>materials_provide:</label>
+              {{ form.materials_provide}}
+
+          </div>
+        </div>
+           <div class="" id="submit">
+            <input type="submit" class="submit btn btn-outline-primary"   value="Submit">
+            <a href="{% url 'logout' %}"  class="btn btn-outline-primary home">logout</a>
+           </div>
+        </div>
+      </form>
+    </div>
+   </div>
+</body>
+</html>

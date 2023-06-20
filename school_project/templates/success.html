@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Success page</title>
+    <link rel="stylesheet" href="{% static 'css/customstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+<div class="shadow-card">
+  <h1 style="text-transform:uppercase;">Success</h1>
+  <p>Order Confirmed </p>
+  <a href="{% url 'index' %}" class="btn btn-outline-primary">Home</a>
+</div>
+</body>
+</html>
